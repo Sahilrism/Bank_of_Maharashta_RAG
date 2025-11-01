@@ -48,9 +48,47 @@ bank_rag_project/
 │ ├── data_scrapping.py # Scrapes content from all target URLs
 │ ├── clean_data.py # Cleans and merges scraped content
 │ ├── vector_db.py # Creates embeddings & builds FAISS index
-│ └── _query_rag.py # RAG assistant script for Q&A
+│ └── chatbot.py # RAG assistant script for Q&A
 │
 ├── requirements.txt # All Python dependencies
 └── README.md # Project documentation
 
 
+## Setup Instructions
+
+# 1. Clone the Repository
+    - Open command terminal and enter the below git command
+    - git clone https://github.com/<your-username>/bank_rag_project.git
+    - then change the directory by using below command
+        cd bank_rag_project
+
+# 2. Create and Activate a Virtual Environment
+    - Open Anaconda Prompt and the below commands
+        - conda create -n rag_env python=3.10 -y
+        - conda activate rag_env
+
+# 3. Install Dependencies
+    - Run the below command in conda prompt     
+        - pip install -r requirements.txt
+
+# 4. Scrape the data
+    - Run the below command in conda prompt
+        - python scripts/data_scrapping.py
+
+# 5. Clean and Combine the Data
+    - Run the below command in conda prompt
+        - python scripts/clean_data.py
+
+# 6. Generate Embeddings & Build FAISS Index
+    - Run the below command in conda prompt
+        - python scripts/vector_db.py
+
+# 7. Run the RAG Chatbot
+    - Run the below command in conda prompt
+        - python scripts/chatbot.py
+
+# 8. Ask the Chatbot about Bank of Maharashtra
+    - “What is the interest rate for a Bank of Maharashtra home loan?”
+    - “What is the processing fee for a car loan?”
+    - “What is the maximum tenure for a home loan?”
+    - “Does the bank provide gold loans?”
