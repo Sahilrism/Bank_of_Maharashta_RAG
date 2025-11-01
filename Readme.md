@@ -92,3 +92,6 @@ bank_rag_project/
     - “What is the processing fee for a car loan?”
     - “What is the maximum tenure for a home loan?”
     - “Does the bank provide gold loans?”
+
+# 9. Close the ChatBot
+    - Enter "exit" in command prompt to close the Chatbot
